@@ -11,9 +11,12 @@ Para o cálculo do Índice de Desigualdade de Oportunidade (IOP) educacional for
 
 ### Tratamento
 - Transformação das variáveis socieconomicas de texto para numérica, para a construção futura do IOP (base ENEM). 
+manip_p_IOP.do
 - Merge entre a base do ENEM e o Censo Escolar atraves da variável referente ao código da escola, informada OPCIONALMENTE entre os alunos inscritos no ENEM. 
 - Classificação dos alunos oriundos de escolas Privadas, Públicas e Públicas integrais.
-- Cálculo do índice de Desigualdade de Oportunidade geral por município, e por tipo de unidade educacional.
+MERGE E DUMMY ESCOLAS.txt
+- Cálculo do índice de Desigualdade de Oportunidade geral por município, e por tipo de unidade educacional. 
+IOP MUNICIPAL.txt
 
 
 
