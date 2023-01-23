@@ -15,4 +15,15 @@ Para o cálculo do Índice de Desigualdade de Oportunidade (IOP) educacional for
 - Classificação dos alunos oriundos de escolas Privadas, Públicas e Públicas integrais. `MERGE E DUMMY ESCOLAS.txt`
 - Cálculo do índice de Desigualdade de Oportunidade geral por município, e por tipo de unidade educacional. `IOP MUNICIPAL.txt` 
 
+## RESULTADOS 
+
+- Tabela 1. Índice de desigualdade de oportunidades em Pernambuco e sua decomposição de Shapley, segundo o tipo de escola e área do ENEM (Matemática e Linguagens e códigos) - 2009, 2013, 2016 e 2019.
+
+![IOP 1](https://user-images.githubusercontent.com/123265569/213969095-94ca4cf1-0df0-4713-ba59-05a98691de2f.png)
+
+- Tabela 2. Índice de desigualdade de oportunidades em Pernambuco e sua decomposição de Shapley, segundo o tipo de escola e área do ENEM (Ciências da Natureza e Ciências Humanas) - 2009, 2013, 2016 e 2019.
+
+![IOP 2](https://user-images.githubusercontent.com/123265569/213969295-6df18e7e-c7d4-4496-9d9f-e187c23782d8.png)
+
+
 
