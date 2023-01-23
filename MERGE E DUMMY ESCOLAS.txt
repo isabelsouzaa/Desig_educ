@@ -1,0 +1,41 @@
+*** MERGE***
+merge m:1 co_escola using "C:\Users\Windows 10\Desktop\DISSERTAÇÃO\DADOS\CENSO\DTA\2009 CENSO.dta"
+
+
+*** DUMMY ESCOLA PRIVADA***
+
+gen esc_privada=. 
+replace esc_privada= 1 if id_dependencia_adm==4
+replace esc_privada= 0 if id_dependencia_adm==1
+replace esc_privada= 0 if id_dependencia_adm==2
+replace esc_privada= 0 if id_dependencia_adm==3
+tab esc_privada if co_uf_residencia==26, m 
+
+*** DUMMY ESCOLA PÚBLICA ***
+
+gen esc_publica=. 
+replace esc_publica= 1 if id_dependencia_adm==1
+replace esc_publica= 1 if id_dependencia_adm==2
+replace esc_publica= 1 if id_dependencia_adm==3
+replace esc_publica= 0 if id_dependencia_adm==4
+tab esc_publica if co_uf_residencia==26, m
+
+
+*** DUMMY ESCOLA PÚBLICA INTEGRAL***
+
+gen esc_publica_integ=.
+replace esc_publica_integ= 1 if esc_publica==1 &  id_reg_medio_integrado==1
+replace esc_publica_integ= 0 if esc_publica==0 &  id_reg_medio_integrado==0
+replace esc_publica_integ= 0 if esc_publica==1 &  id_reg_medio_integrado==0
+replace esc_publica_integ= 0 if esc_publica==0 &  id_reg_medio_integrado==1
+tab esc_publica_integ if co_uf_residencia==26, m
+
+*** DUMMY ESCOLA PUBLICA TRADICIONAL***
+
+gen esc_publica_trad=.
+replace esc_publica_trad= 1 if esc_publica==1 &  id_reg_medio_integrado==0
+replace esc_publica_trad= 0 if esc_publica==1 &  id_reg_medio_integrado==1
+replace esc_publica_trad= 0 if esc_publica==0 &  id_reg_medio_integrado==0
+replace esc_publica_trad= 0 if esc_publica==0 &  id_reg_medio_integrado==1
+tab esc_publica_trad if co_uf_residencia==26, m
+
