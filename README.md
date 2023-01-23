@@ -16,7 +16,8 @@ manip_p_IOP.do
 - Classificação dos alunos oriundos de escolas Privadas, Públicas e Públicas integrais.
 MERGE E DUMMY ESCOLAS.txt
 - Cálculo do índice de Desigualdade de Oportunidade geral por município, e por tipo de unidade educacional. 
-IOP MUNICIPAL.txt
+- [Contribution guidelines for this project](E:\Construção IOP\DO.FILE) 
+- 
 
 
 
