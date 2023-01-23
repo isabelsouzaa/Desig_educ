@@ -1,0 +1,120 @@
+*** IOP MUNICIPAL GERAL **
+
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26
+use resultado, clear 
+list
+ 
+ 
+ 
+*** IOP MUNICIPAL ESCOLA PÚBLICA INTEGRAL***
+
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_integ==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_integ==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_integ==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_integ==1
+use resultado, clear 
+list
+
+
+*** IOP MUNICIPAL ESCOLA PRIVADA***
+  
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_privada==1
+use resultado, clear 
+list
+
+*** IOP MUNICIPAL ESCOLA PÚBLICA ***
+
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica==1  
+use resultado, clear 
+list
+
+*** IOP MUNICIPAL ESCOLA PÚBLICA TRADICIONAL***
+
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_trad==1
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_trad==1
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_trad==1
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_esc==26 & co_uf_residencia==26 & esc_publica_trad==1
+  
+use resultado, clear 
+list  
+
+*** IOP MUNICIPAL ESCOLA PÚBLICA INTEGRAL E PRIVADA ***
+
+
+gen esc_pub_int_privada=. 
+replace esc_pub_int_privada= 1 if esc_publica_integ ==1 | esc_privada==1
+replace esc_pub_int_privada= 0 if esc_privada ==0 | esc_privada==0
+
+gen esc_pub_int_privada=. 
+replace esc_pub_int_privada= 1 if esc_publica_integ ==1
+replace esc_pub_int_privada= 0 if esc_publica_integ ==0
+replace esc_pub_int_privada= 1 if esc_privada ==1
+
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & esc_pub_int_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & esc_pub_int_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & esc_pub_int_privada==1
+use resultado, clear 
+list
+statsby N= e(N) R2=e(r2), by(co_municipio_residencia) saving(resultado, replace): reg nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & esc_pub_int_privada==1
+use resultado, clear 
+list
+
+
+
+
+*** IOP ESTADUAL PARA TABELA ***
+
+iop nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 , shapley(fg2r) 
+iop nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_privada==1, shapley(fg2r)
+iop nota_lc dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_publica==1, shapley(fg2r)
+iop nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 , shapley(fg2r)
+iop nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_privada==1, shapley(fg2r)
+iop nota_mt dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_publica==1, shapley(fg2r)
+iop nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 , shapley(fg2r)
+iop nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_privada==1, shapley(fg2r)
+iop nota_cn dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_publica==1, shapley(fg2r)
+iop nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 , shapley(fg2r)
+iop nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_privada==1, shapley(fg2r)
+iop nota_ch dSexo dlocalizacao EscolaridadePai EscolaridadeMae raca renda if co_uf_residencia==26 & co_uf_esc==26 & esc_publica==1, shapley(fg2r)
+
+
+
+
+
